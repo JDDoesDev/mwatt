@@ -1,0 +1,6 @@
+_site
+.sass-cache
+.jekyll-metadata
+*.mp3
+*.m4a
+_config.yml

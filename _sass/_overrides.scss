@@ -1,0 +1,153 @@
+body {
+  padding-top: 5rem;
+  font-size: 17px;
+}
+
+
+.jumbotron {
+  position: relative;
+  color: #ebebeb;
+  background-image: url('../../img/temple.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  .container-fluid {
+    padding: 0 5em 2em;
+    background-color: rgba(0,0,0,.75);
+    // text-align: center;
+  }
+  h1 {
+    margin-top: 2em;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    @media (max-width: 992px) {
+      font-size: 2em;
+    }
+  }
+  h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+  .center {
+    text-align: center;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1em;
+    margin: 0.5em 2em;
+    @media (max-width: 992px) {
+      margin: 0;
+      margin-top: .5em;
+    }
+  }
+}
+
+.fa-facebook-official {
+  color: #3b5998;
+  transition: color 0.1s ease-in-out;
+  font-size: 1.5em;
+  &:hover {
+    color: #8b9dc3;
+  }
+}
+
+.fa-twitter-square {
+  transition: color 0.1s ease-in-out;
+  color: #00aced;
+  font-size: 1.5em;
+
+  &:hover {
+    color: #0084b4;
+  }
+}
+// Improve visibility of subtitles and similar text by increasing contrast
+h1 small, h2 small, h3 small {
+  color: #77778C;
+}
+
+btn small, .btn small {
+  color: #2A2A2A;
+}
+
+// Making the date smaller improves the episode header when it includes the subtitle
+.episode_date {
+  font-size: 45%;
+}
+
+// Theme for the Swiss-Sided Dice podcast, red and white based on the Swiss flag - commented out for now, until a better solution can be found
+
+/*
+// Main navbar background
+.navbar-default {
+  background-color: #E11A27;
+}
+
+// Hovering over navbar links, keep the text white, but add darker background
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a {
+  color: #FFF;
+  background-color: #E11A27;
+}
+
+// The "brand" / podcast title doesn't change on hover, but does keep the text white
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+  color: #FFF;
+}
+
+// This is for the menu button on narrow screens
+.navbar-default .navbar-toggle {
+  background-color: #E11A27;
+  border-color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+// Darker background, keep rest white
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #A5131D;
+  border-color: #FFF;
+  color: #FFF;
+}
+
+// Links and buttons in the website are a dark red for best contrast, but get lightened on hover for feedback
+a {
+  color: #CF000F;
+}
+a:hover {
+  color: #EF3743;
+}
+.btn-primary {
+  background-color: #CF000F;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #EF3743;
+}
+*/
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus
+ {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar > .container-fluid {
+  padding: 0 2rem;
+}
