@@ -2,30 +2,26 @@
 {% elsif page %}
   {% assign post = page %}
 {% endif %}
-<section id="{{ post.id | sha1:8 }}" class="active">
+<div id="{{ post.id }}" class="active">
   {% include post_header.html %}
 
-
-  <a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-  <a href="https://twitter.com/share" data-url="{{ site.url }}{{post.url }}" data-text="{{ post.title }}"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+Share this
+  <a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook" onClick="ga('send', 'event', 'Share', 'Click', 'Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+  <a href="https://twitter.com/intent/tweet" class='twitter-share-button' data-url="{{ site.url }}{{ post.url }}" data-text="{{ post.title }}" onClick="ga('send', 'event', 'Share', 'Click', 'Twitter');"><i class="fa fa-twitter-square twitter-share-button" aria-hidden="true"></i></a>
 
   {{ post.content }}
+
     {% if post.audio %}
       {% for file in post.audio %}
       <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <p>Listen to .{{ file.first }}</p>
-        <audio controls="controls" src="https://www.meanwhileattemple.com/download.php?url={{ site | download_url_with_fallback }}/{{ file.last }}">
+        <audio controls="controls" src="{{ site | download_url_with_fallback }}/{{ file.last }}">
           Your browser does not support the <code>audio</code> element.
         </audio>
-        <a class="btn btn-primary btn-sm" href="https://www.meanwhileattemple.com/download.php?url={{ site | download_url_with_fallback }}/{{ file.last }}">Download .{{ file.first }} ({{ file.last | file_size:'./' | string_of_size }})</a>
+        <a class="btn btn-primary btn-sm" href="{{ site | download_url_with_fallback }}/{{ file.last }}" onClick="ga('send', 'event', 'Download', 'Click', '{{ file.last }}');">Download .{{ file.first }} ({{ file.last | file_size:'./' | string_of_size }})</a>
       </div>
       </div>
       {% endfor %}
     {% endif %}
-  <hr>
-  {{ site | flattr_button:post }}
-  {% unless page.url == '/index.html' %}{% include disqus_thread.html %}{% endunless %}
-  {% unless page.url == '/index.html' %}{% include isso_thread.html %}{% endunless %}
-  <hr>
-</section>
+</div>

@@ -3,7 +3,7 @@
     <a class='episode_title' href='{{ site.url }}{{ post.url }}'>{{ post.title }}</a>
     <small class='episode_date'>
       {% if site.language == "en" %}
-        {{ post.date | full_date_de }}
+        {{ post.date | date: '%B %d, %Y' }}
       {% else %}
         {% if post.datum %}
           {{ post.datum }}
