@@ -10,6 +10,7 @@ audio:
 chapters:
 - 00:00:00.000 Intro.
 tags: "video games, super mario, RPGs, secret of mana, comedy, nerd, geek culture"
+description: This week we dive into the video games that shaped us and made us the fine, upstanding gentlemen we are today.  From the first games we played to the ones that immerse us today, we cover all the bases.
 ---
 This week we dive into the video games that shaped us and made us the fine, upstanding gentlemen we are today.  From the first games we played to the ones that immerse us today, we cover all the bases.
 

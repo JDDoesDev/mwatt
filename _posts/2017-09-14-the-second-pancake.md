@@ -11,6 +11,7 @@ size: '56.9 MB'
 chapters:
 - 00:00:00.000 Intro.
 tags: "science fiction, movies, marvel cinematic universe, comedy, nerd, geek culture"
+description: On this inaugural episode of Meanwhile at Temple, we look at the saturation of superhero cinema and banter about the bubble and when it may burst.  Join us as we walk from the first Superman to the latest in the MCU and discuss hits, misses, and when we feel everything might change.
 ---
 
 On this inaugural episode of Meanwhile at Temple, we look at the saturation of superhero cinema and banter about the bubble and when it may burst.  Join us as we walk from the first Superman to the latest in the MCU and discuss hits, misses, and when we feel everything might change.

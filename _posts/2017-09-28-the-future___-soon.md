@@ -10,6 +10,7 @@ audio:
 chapters:
 - 00:00:00.000 Intro.
 tags: 'video games, science fiction, star trek, stargate, werthers'
+description: In this episode we examine the tech that we've seen make its way out of fiction and into our lives and the tech we'd like to see.  Join us as we discuss all the science fiction and fantasy tech from our favorite movies, shows, and books that we want to be available.
 ---
 
 ## In the year 2000...
